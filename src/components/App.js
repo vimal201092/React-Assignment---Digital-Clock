@@ -34,19 +34,19 @@ class App extends Component {
         const currTime = this.state.time;
         const [hours,minutes,seconds] = [currTime.getHours(),currTime.getMinutes(),currTime.getSeconds()];
 
-        const amOrPm = hours >= 12 ? "PM" : "AM";
+       // const amOrPm = hours >= 12 ? "PM" : "AM";
         //const twelveHourFormat = hours > 12 ? hours : hours;
-        const hourString = this.padNumberToTwoDigits(hours);
-        const minuteString = this.padNumberToTwoDigits(minutes);
-        const secondString = this.padNumberToTwoDigits(seconds);
+        //const hourString = this.padNumberToTwoDigits(hours);
+        //const minuteString = this.padNumberToTwoDigits(minutes);
+        //const secondString = this.padNumberToTwoDigits(seconds);
 
-        const timeString = `${hourString}:${minuteString}:${secondString} ${amOrPm}`;
+        const timeString = `${hours}:${minutes}:${seconds}`;
         return timeString;
     }
 
-    padNumberToTwoDigits(num) {
-      return `${ num < 10 ? "0" : ""}${num}`;
-    }
+    //padNumberToTwoDigits(num) {
+    //  return `${ num < 10 ? "0" : ""}${num}`;
+    //}
 }
 
 
