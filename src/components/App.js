@@ -7,7 +7,7 @@ class App extends Component {
         this.state = {
             time: new Date()
         };
-        this.intervalId = this.intervalId.bind(this);
+        this.intervalId = null;
     }
     render() {
 
